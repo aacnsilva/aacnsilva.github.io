@@ -1,170 +1,243 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Hello World!</title>
     <link rel="stylesheet" href="output.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
+  <body class="bg-slate-800 font-mono container mx-auto">
     <div class="grid grid-cols-3">
-      <div>
-        <h1>Hello World!</h1>
+      <div class="justify-self-center self-center">
+        <h1 class="font-bold text-emerald-600 text-lg">Hello World!</h1>
       </div>
-      <div>
-        <img src="myPhoto.jpeg" alt="António Silva.jpeg" />
+      <div class="justify-self-center">
+        <img
+          class="rounded-full"
+          width="200px"
+          height="auto"
+          src="myPhoto.jpeg"
+          alt="António Silva.jpeg"
+        />
       </div>
-      <div>
-        <h1><span>antonio@silva ~ % whoami</span><br /></h1>
+      <div class="justify-self-center self-center">
+        <h1 class="font-bold text-emerald-600 text-lg">
+          <span class="text-xs">antonio@silva ~ % </span>whoami
+        </h1>
         <ul>
-          <li>António Silva</li>
-          <li>15 October 1992</li>
-          <li>Porto, Portugal</li>
-          <li>antoniosilva1017@gmail.com</li>
+          <li class="text-white text-sm">António Silva</li>
+          <li class="text-white text-sm">15 October 1992</li>
+          <li class="text-white text-sm">Porto, Portugal</li>
+          <li class="text-white text-sm">antoniosilva1017@gmail.com</li>
         </ul>
       </div>
       <div>
         <div>
-          <h1><span>antonio@silva ~ % </span>Personal Values</h1>
+          <h1 class="font-bold text-emerald-600 text-lg">
+            <span class="text-xs">antonio@silva ~ % </span>Personal Values
+          </h1>
           <ul>
-            <li>Reponsibility</li>
-            <li>Curiosity</li>
-            <li>Resilience</li>
-            <li>Empathy</li>
-            <li>Integrity</li>
+            <li class="text-white text-sm">Reponsibility</li>
+            <li class="text-white text-sm">Curiosity</li>
+            <li class="text-white text-sm">Resilience</li>
+            <li class="text-white text-sm">Empathy</li>
+            <li class="text-white text-sm">Integrity</li>
           </ul>
         </div>
         <div>
-          <h1><span>antonio@silva ~ % </span>Languages</h1>
+          <h1 class="font-bold text-emerald-600 text-lg">
+            <span class="text-xs">antonio@silva ~ % </span>Languages
+          </h1>
           <ul>
-            <li>Portuguese <progress value="100"></progress></li>
-            <li>English <progress value="100"></progress></li>
-            <li>Spanish <progress value="70"></progress></li>
+            <li class="text-white text-sm">
+              Portuguese <progress value="100"></progress>
+            </li>
+            <li class="text-white text-sm">
+              English <progress value="100"></progress>
+            </li>
+            <li class="text-white text-sm">
+              Spanish <progress value="70"></progress>
+            </li>
           </ul>
         </div>
         <div>
-          <h1><span>antonio@silva ~ % </span>Skills</h1>
+          <h1 class="font-bold text-emerald-600 text-lg">
+            <span class="text-xs">antonio@silva ~ % </span>Skills
+          </h1>
           <ul>
-            <li>Business Central</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Azure DevOps Services</li>
-            <li>SQL</li>
-            <li>Git</li>
-            <li>Agile</li>
+            <li class="text-white text-sm">Business Central</li>
+            <li class="text-white text-sm">HTML</li>
+            <li class="text-white text-sm">CSS</li>
+            <li class="text-white text-sm">JavaScript</li>
+            <li class="text-white text-sm">Azure DevOps Services</li>
+            <li class="text-white text-sm">SQL</li>
+            <li class="text-white text-sm">Git</li>
+            <li class="text-white text-sm">Agile</li>
           </ul>
         </div>
       </div>
       <div class="grid grid-cols-subgrid col-span-2">
         <div class="col-start-3">
-          <h1>Experience</h1>
+          <h1 class="font-bold text-emerald-600 text-lg">Experience</h1>
           <ul>
-            <li>
-              <h2>
-                <span>antonio@silva ~ % cd </span>LS Retail, an Aptos Company
+            <li class="text-white text-sm">
+              <h2 class="font-bold text-emerald-600 text-base">
+                <span class="text-xs">antonio@silva ~ % cd </span>LS Retail, an
+                Aptos Company
               </h2>
-              <ul>
-                <h3>
-                  <span>antonio@silva ~ % ls </span>Senior Software Engineer
+              <ol>
+                <h3 class="font-bold text-emerald-600 text-base">
+                  <span class="text-xs">antonio@silva ~ % ls </span>Senior
+                  Software Engineer
                 </h3>
-                <time>Nov 2022 - Present</time>
+                <time class="font-bold">Nov 2022 - Present</time>
                 <ul>
-                  <li>
+                  <li class="text-white text-sm">
                     Full-stack development (Node.js, Typescript, AL (Business
                     Central), yaml (Azure Pipelines))
                   </li>
-                  <li>Automated UI Testing (puppeteer, mocha, vitest)</li>
-                  <li>Scrum</li>
+                  <li class="text-white text-sm">
+                    Automated UI Testing (puppeteer, mocha, vitest)
+                  </li>
+                  <li class="text-white text-sm">Scrum</li>
                 </ul>
-                <h3><span>antonio@silva ~ % ls </span>Software Engineer</h3>
-                <time>Apr 2020 - Nov 2022</time>
+                <h3 class="font-bold text-emerald-600 text-base">
+                  <span class="text-xs">antonio@silva ~ % ls </span>Software
+                  Engineer
+                </h3>
+                <time class="font-bold">Apr 2020 - Nov 2022</time>
                 <ul>
-                  <li>
+                  <li class="text-white text-sm">
                     Full-stack development (HTML, CSS, Javascript, X++ (D365
                     Finance and Operations))
                   </li>
-                  <li>Automated UI Testing (Selenium)</li>
-                  <li>Scrum</li>
-                  <li>Back-end development (C/AL (Business Central))</li>
-                  <li>
+                  <li class="text-white text-sm">
+                    Automated UI Testing (Selenium)
+                  </li>
+                  <li class="text-white text-sm">Scrum</li>
+                  <li class="text-white text-sm">
+                    Back-end development (C/AL (Business Central))
+                  </li>
+                  <li class="text-white text-sm">
                     Managing Stakeholders closely with the Solution Architect
                   </li>
-                  <li>
+                  <li class="text-white text-sm">
                     Managing/Designing/Planning legal requirements from
                     certification authorities (Pharmacy Sweeden, eHM)
                   </li>
                 </ul>
-              </ul>
+              </ol>
             </li>
-            <li>
-              <h2><span>antonio@silva ~ % cd </span>myPartner</h2>
+            <li class="text-white text-sm">
+              <h2 class="font-bold text-emerald-600 text-base">
+                <span class="text-xs">antonio@silva ~ % cd </span>myPartner
+              </h2>
               <ul>
-                <h3><span>antonio@silva ~ % ls </span>Lead Engineer</h3>
-                <time>May 2019 - May 2020</time>
+                <h3 class="font-bold text-emerald-600 text-base">
+                  <span class="text-xs">antonio@silva ~ % ls </span>Lead
+                  Engineer
+                </h3>
+                <time class="font-bold">May 2019 - May 2020</time>
                 <ul>
-                  <li>Back-end development (C/AL (Business Central))</li>
-                  <li>Planning/Designing Project Implementation</li>
-                  <li>Estimating Project Implementation/Developments</li>
-                  <li>Mentoring junior developers</li>
+                  <li class="text-white text-sm">
+                    Back-end development (C/AL (Business Central))
+                  </li>
+                  <li class="text-white text-sm">
+                    Planning/Designing Project Implementation
+                  </li>
+                  <li class="text-white text-sm">
+                    Estimating Project Implementation/Developments
+                  </li>
+                  <li class="text-white text-sm">
+                    Mentoring junior developers
+                  </li>
                 </ul>
-                <h3>
-                  <span>antonio@silva ~ % ls </span>Senior Software Engineer
+                <h3 class="font-bold text-emerald-600 text-base">
+                  <span class="text-xs">antonio@silva ~ % ls </span>Senior
+                  Software Engineer
                 </h3>
                 <p>Oct 2018 - Mar 2019</p>
                 <ul>
-                  <li>Back-end development (C/AL (Business Central))</li>
-                  <li>Planning/Designing Developments</li>
-                  <li>Estimating Developments</li>
-                  <li>Mentoring junior developers</li>
-                  <li>
+                  <li class="text-white text-sm">
+                    Back-end development (C/AL (Business Central))
+                  </li>
+                  <li class="text-white text-sm">
+                    Planning/Designing Developments
+                  </li>
+                  <li class="text-white text-sm">Estimating Developments</li>
+                  <li class="text-white text-sm">
+                    Mentoring junior developers
+                  </li>
+                  <li class="text-white text-sm">
                     Awarded Senior prize for demonstrating senior knowledge and
                     responsibility
                   </li>
                 </ul>
-                <h3>
-                  <span>antonio@silva ~ % ls </span>Support Software Engineer
+                <h3 class="font-bold text-emerald-600 text-base">
+                  <span class="text-xs">antonio@silva ~ % ls </span>Support
+                  Software Engineer
                 </h3>
-                <time>Jan 2017 - Oct 2018</time>
+                <time class="font-bold">Jan 2017 - Oct 2018</time>
                 <ul>
-                  <li>Back-end development (C/AL (Business Central))</li>
-                  <li>Planning/Designing Developments</li>
-                  <li>Estimating Developments</li>
-                  <li>Mentoring junior developers</li>
-                  <li>
+                  <li class="text-white text-sm">
+                    Back-end development (C/AL (Business Central))
+                  </li>
+                  <li class="text-white text-sm">
+                    Planning/Designing Developments
+                  </li>
+                  <li class="text-white text-sm">Estimating Developments</li>
+                  <li class="text-white text-sm">
+                    Mentoring junior developers
+                  </li>
+                  <li class="text-white text-sm">
                     Awarded Most Profitable Employee of the year in National
                     Projects
                   </li>
                 </ul>
-                <h3>
-                  <span>antonio@silva ~ % ls </span>Software Engineer (Trainee)
+                <h3 class="font-bold text-emerald-600 text-base">
+                  <span class="text-xs">antonio@silva ~ % ls </span>Software
+                  Engineer (Trainee)
                 </h3>
-                <time>Nov 2021 - Nov 2022</time>
+                <time class="font-bold">Nov 2021 - Nov 2022</time>
                 <ul>
-                  <li>Back-end development (C/AL (Business Central))</li>
-                  <li>Awarded Rookie of the Year</li>
+                  <li class="text-white text-sm">
+                    Back-end development (C/AL (Business Central))
+                  </li>
+                  <li class="text-white text-sm">Awarded Rookie of the Year</li>
                 </ul>
               </ul>
             </li>
           </ul>
         </div>
         <div class="col-start-3">
-          <h1>Education</h1>
+          <h1 class="font-bold text-emerald-600 text-lg">Education</h1>
           <ul>
-            <li>
-              <p>Software Engineering Degree</p>
+            <li class="text-white text-sm">
+              <p class="text-emerald-600 text-base font-bold">
+                Software Engineering Degree
+              </p>
               <p>
                 <a
                   href="https://www.linkedin.com/school/isep/posts/?feedView=all"
                   >Instituto Superior de Engenharia do Porto</a
                 >
               </p>
-              <p>2011-2015</p>
+              <time class="font-bold">2011-2015</time>
             </li>
-            <li>PMI Introduction to Project Management</li>
-            <li>PMI Agile Certified Practitioner (PMI - ACP)</li>
-            <li>
+          </ul>
+          <h1 class="font-bold text-emerald-600 text-lg">Courses</h1>
+          <ul>
+            <li class="text-white text-sm">
+              PMI Introduction to Project Management
+            </li>
+            <li class="text-white text-sm">
+              PMI Agile Certified Practitioner (PMI - ACP)
+            </li>
+            <li class="text-white text-sm">
               Leadership & Team Management: Rapid Training to Managers- Key
               Training & Consulting
             </li>
-            <li>
+            <li class="text-white text-sm">
               Assertive Communication, Interpersonal Relationship and Public
               Presentations - Key Training & Consulting
             </li>
