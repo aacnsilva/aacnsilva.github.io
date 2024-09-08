@@ -1,28 +1,29 @@
 <html>
   <head>
     <title>Hello World!</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <div class="flex-container-r">
-      <div class="card">
-        <h1 class="text-vertical">Welcome</h1>
+    <div class="grid grid-cols-3">
+      <div>
+        <h1>Hello World!</h1>
       </div>
-      <div class="card">
-        <img src="myPhoto.jpeg" alt="My Photo" class="myPhoto" />
+      <div>
+        <img src="myPhoto.jpeg" alt="António Silva.jpeg" />
       </div>
-      <div class="card">
-        <h1>António Silva</h1>
-        <p>15 October 1992</p>
-        <p>Porto, Portugal</p>
-        <p>antoniosilva1017@gmail.com</p>
+      <div>
+        <h1><span>antonio@silva ~ % whoami</span><br /></h1>
+        <ul>
+          <li>António Silva</li>
+          <li>15 October 1992</li>
+          <li>Porto, Portugal</li>
+          <li>antoniosilva1017@gmail.com</li>
+        </ul>
       </div>
-    </div>
-    <div class="flex-container-r">
-      <div class="flex-container-c card">
-        <div class="card">
-          <h1>Personal Values</h1>
-          <ul >
+      <div>
+        <div>
+          <h1><span>antonio@silva ~ % </span>Personal Values</h1>
+          <ul>
             <li>Reponsibility</li>
             <li>Curiosity</li>
             <li>Resilience</li>
@@ -30,105 +31,144 @@
             <li>Integrity</li>
           </ul>
         </div>
-        <div class="card">
-            <h1>Languages</h1>
-            <ul >
-              <li>Portuguese <meter min=0 max=100 optimum="80" value="100"></meter></li>
-              <li>English <meter min=0 max=100 optimum="80" value="100"></meter></li>
-              <li>Spanish <meter min=0 max=100 optimum="80" value="70"></meter></li>
+        <div>
+          <h1><span>antonio@silva ~ % </span>Languages</h1>
+          <ul>
+            <li>Portuguese <progress value="100"></progress></li>
+            <li>English <progress value="100"></progress></li>
+            <li>Spanish <progress value="70"></progress></li>
+          </ul>
         </div>
-        <div class="card">
-            <h1>Skills</h1>
-            <ul >
-                <li>Business Central</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Azure DevOps Services</li>
-                <li>SQL</li>
-                <li>Git</li>
-                <li>Agile</li>
-            </ul>
+        <div>
+          <h1><span>antonio@silva ~ % </span>Skills</h1>
+          <ul>
+            <li>Business Central</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Azure DevOps Services</li>
+            <li>SQL</li>
+            <li>Git</li>
+            <li>Agile</li>
+          </ul>
         </div>
       </div>
-      <div class="flex-container-c card">
-        <div class="card">
-            <h1>Experience</h1>
-            <ul>
-                <li>
-                    <h2>LS Retail, an Aptos Company</h2>
-                    <ul>
-                        <h3>Senior Software Engineer</h3>
-                        <p class="start-end-date">Nov 2022 - Present</p>
-                        <ul>
-                            <li>Full-stack development (Node.js, Typescript, AL (Business Central), yaml (Azure Pipelines))</li>
-                            <li>Automated UI Testing (puppeteer, mocha, vitest)</li>
-                            <li>Scrum</li>
-                        </ul>
-                        <h3>Software Engineer</h3>
-                        <p class="start-end-date">Apr 2020 - Nov 2022</p>
-                        <ul>
-                            <li>Full-stack development (HTML, CSS, Javascript, X++ (D365 Finance and Operations))</li>
-                            <li>Automated UI Testing (Selenium)</li>
-                            <li>Scrum</li>
-                            <li>Back-end development (C/AL (Business Central))</li>
-                            <li>Managing Stakeholders closely with the Solution Architect</li>
-                            <li>Managing/Designing/Planning legal requirements from certification authorities (Pharmacy Sweeden, eHM)</li>
-                        </ul>
-                    </ul>
-                </li>
-                <li>
-                    <h2>myPartner</h2>
-                    <ul>
-                        <h3>Lead Engineer</h3>
-                        <p class="start-end-date">May 2019 - May 2020</p>
-                        <ul>
-                            <li>Back-end development (C/AL (Business Central))</li>
-                            <li>Planning/Designing Project Implementation</li>
-                            <li>Estimating Project Implementation/Developments</li>
-                            <li>Mentoring junior developers</li>
-                        </ul>
-                        <h3>Senior Software Engineer</h3>
-                        <p class="start-end-date">Oct 2018 - Mar 2019</p>
-                        <ul>
-                            <li> Back-end development (C/AL (Business Central))</li>
-                            <li>Planning/Designing Developments</li></li>
-                            <li>Estimating Developments</li>
-                            <li>Mentoring junior developers</li>
-                            <li>Awarded Senior prize for demonstrating senior knowledge and responsibility</li>
-                        </ul>
-                        <h3>Support Software Engineer</h3>
-                        <p class="start-end-date">Jan 2017 - Oct 2018</p>
-                        <ul>
-                            <li>Back-end development (C/AL (Business Central))</li>
-                            <li>Planning/Designing Developments</li>
-                            <li>Estimating Developments</li>
-                            <li>Mentoring junior developers</li>
-                            <li>Awarded Most Profitable Employee of the year in National Projects</li>
-                        </ul>
-                        <h3>Software Engineer (Trainee)</h3>
-                        <p class="start-end-date">Nov 2021 - Nov 2022</p>
-                        <ul>
-                            <li>Back-end development (C/AL (Business Central))</li>
-                            <li>Awarded Rookie of the Year</li>
-                        </ul>
-                    </ul>
-                </li>
-            </ul>
+      <div class="grid grid-cols-subgrid col-span-2">
+        <div class="col-start-3">
+          <h1>Experience</h1>
+          <ul>
+            <li>
+              <h2>
+                <span>antonio@silva ~ % cd </span>LS Retail, an Aptos Company
+              </h2>
+              <ul>
+                <h3>
+                  <span>antonio@silva ~ % ls </span>Senior Software Engineer
+                </h3>
+                <time>Nov 2022 - Present</time>
+                <ul>
+                  <li>
+                    Full-stack development (Node.js, Typescript, AL (Business
+                    Central), yaml (Azure Pipelines))
+                  </li>
+                  <li>Automated UI Testing (puppeteer, mocha, vitest)</li>
+                  <li>Scrum</li>
+                </ul>
+                <h3><span>antonio@silva ~ % ls </span>Software Engineer</h3>
+                <time>Apr 2020 - Nov 2022</time>
+                <ul>
+                  <li>
+                    Full-stack development (HTML, CSS, Javascript, X++ (D365
+                    Finance and Operations))
+                  </li>
+                  <li>Automated UI Testing (Selenium)</li>
+                  <li>Scrum</li>
+                  <li>Back-end development (C/AL (Business Central))</li>
+                  <li>
+                    Managing Stakeholders closely with the Solution Architect
+                  </li>
+                  <li>
+                    Managing/Designing/Planning legal requirements from
+                    certification authorities (Pharmacy Sweeden, eHM)
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <h2><span>antonio@silva ~ % cd </span>myPartner</h2>
+              <ul>
+                <h3><span>antonio@silva ~ % ls </span>Lead Engineer</h3>
+                <time>May 2019 - May 2020</time>
+                <ul>
+                  <li>Back-end development (C/AL (Business Central))</li>
+                  <li>Planning/Designing Project Implementation</li>
+                  <li>Estimating Project Implementation/Developments</li>
+                  <li>Mentoring junior developers</li>
+                </ul>
+                <h3>
+                  <span>antonio@silva ~ % ls </span>Senior Software Engineer
+                </h3>
+                <p>Oct 2018 - Mar 2019</p>
+                <ul>
+                  <li>Back-end development (C/AL (Business Central))</li>
+                  <li>Planning/Designing Developments</li>
+                  <li>Estimating Developments</li>
+                  <li>Mentoring junior developers</li>
+                  <li>
+                    Awarded Senior prize for demonstrating senior knowledge and
+                    responsibility
+                  </li>
+                </ul>
+                <h3>
+                  <span>antonio@silva ~ % ls </span>Support Software Engineer
+                </h3>
+                <time>Jan 2017 - Oct 2018</time>
+                <ul>
+                  <li>Back-end development (C/AL (Business Central))</li>
+                  <li>Planning/Designing Developments</li>
+                  <li>Estimating Developments</li>
+                  <li>Mentoring junior developers</li>
+                  <li>
+                    Awarded Most Profitable Employee of the year in National
+                    Projects
+                  </li>
+                </ul>
+                <h3>
+                  <span>antonio@silva ~ % ls </span>Software Engineer (Trainee)
+                </h3>
+                <time>Nov 2021 - Nov 2022</time>
+                <ul>
+                  <li>Back-end development (C/AL (Business Central))</li>
+                  <li>Awarded Rookie of the Year</li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="card">
-            <h1>Education</h1>
-            <ul>
-                <li>
-                    <p>Software Engineering Degree</p>
-                    <p><a href="https://www.linkedin.com/school/isep/posts/?feedView=all">Instituto Superior de Engenharia do Porto</a></p>
-                    <p class="start-end-date">2011-2015</p>
-                </li>
-                <li>PMI Introduction to Project Management</li>
-                <li>PMI Agile Certified Practitioner (PMI - ACP)</li>
-                <li>Leadership & Team Management: Rapid Training to Managers- Key Training & Consulting</li>
-                <li>Assertive Communication, Interpersonal Relationship and Public Presentations - Key Training & Consulting</li>
-            </ul>
+        <div class="col-start-3">
+          <h1>Education</h1>
+          <ul>
+            <li>
+              <p>Software Engineering Degree</p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/school/isep/posts/?feedView=all"
+                  >Instituto Superior de Engenharia do Porto</a
+                >
+              </p>
+              <p>2011-2015</p>
+            </li>
+            <li>PMI Introduction to Project Management</li>
+            <li>PMI Agile Certified Practitioner (PMI - ACP)</li>
+            <li>
+              Leadership & Team Management: Rapid Training to Managers- Key
+              Training & Consulting
+            </li>
+            <li>
+              Assertive Communication, Interpersonal Relationship and Public
+              Presentations - Key Training & Consulting
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -1,47 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3 {
+  @apply font-bold;
+  /* @apply underline; */
+  @apply text-emerald-600;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+time {
+  @apply text-sm;
+  @apply font-bold;
+  @apply text-emerald-700;
+}
+
 body {
-  /* background-color: lightgray; */
-  max-width: 100vh;
-  margin: 0 auto;
+  @apply bg-slate-800;
+  @apply font-mono;
+  @apply container;
+  @apply mx-auto;
 }
 
-.flex-container-r {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-container-c {
-  display: flex;
-  flex-direction: column;
-}
-
-.card {
-  flex: 1 1 auto;
-}
-
-.text-vertical {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-
-.myPhoto {
-  border-radius: 50%;
+img {
+  @apply rounded-full;
   width: 200px;
-  height: 200px;
-  margin: 10px;
+  height: auto;
 }
 
-html {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  min-height: 100vh;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.start-end-date {
-  font-size: 0.8em;
-  color: gray;
+li {
+  @apply text-white;
 }
