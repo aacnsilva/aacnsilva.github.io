@@ -29,18 +29,27 @@
         </h1>
       </div>
       <div class="justify-self-center">
-        <img
-          class="rounded-full"
-          width="200px"
-          height="auto"
-          src="myPhoto.jpeg"
-          alt="António Silva.jpeg"
-        />
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img
+                class="rounded-full"
+                src="myPhoto.jpeg"
+                alt="António Silva.jpeg"
+              />
+            </div>
+            <div class="flip-box-back">
+              <img
+                class="rounded-full"
+                src="myPhoto2.jpg"
+                alt="António Silva.jpeg"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="justify-self-center self-center">
-        <h1 class="font-bold text-emerald-600 text-lg">
-          antonio@silva ~ % whoami
-        </h1>
+        <h1 class="font-bold text-emerald-600 text-lg">~ % whoami</h1>
         <ul>
           <li class="text-white text-sm">António Silva</li>
           <li class="text-white text-sm">15 October 1992</li>
@@ -51,12 +60,9 @@
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
                   width="256"
                   height="256"
                   viewBox="0 0 256 256"
-                  xml:space="preserve"
                   class="size-6 inline-block"
                 >
                   <defs></defs>
@@ -161,7 +167,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-4 inline-block"
+                class="size-6 inline-block"
               >
                 <path
                   stroke-linecap="round"
@@ -170,7 +176,7 @@
                 />
               </svg>
             </span>
-            antonio@silva ~ % cat /personalValues
+            ~ % cat /personalValues
           </h1>
           <ul>
             <li class="text-white text-sm">Reponsibility</li>
@@ -189,7 +195,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-4 inline-block"
+                class="size-6 inline-block"
               >
                 <path
                   stroke-linecap="round"
@@ -198,50 +204,17 @@
                 />
               </svg>
             </span>
-            antonio@silva ~ % cat /languages
+            ~ % cat /languages
           </h1>
           <ul>
             <li>
-              <span class="text-white text-sm">Portuguese</span>
-            </li>
-            <li class="progress">
-              <div
-                class="progress-bar rounded-full"
-                style="width: 100%; background-color: rgb(6 95 70)"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                100%
-              </div>
+              <p class="text-white text-sm">Portuguese</p>
             </li>
             <li>
-              <span class="text-white text-sm">English</span>
-            </li>
-            <li class="progress">
-              <div
-                class="progress-bar rounded-full"
-                style="width: 100%; background-color: rgb(6 95 70)"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                100%
-              </div>
+              <p class="text-white text-sm">English</p>
             </li>
             <li>
-              <span class="text-white text-sm">Spanish</span>
-            </li>
-            <li class="progress">
-              <div
-                class="progress-bar rounded-full"
-                style="width: 70%; background-color: rgb(6 95 70)"
-                aria-valuenow="70"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                70%
-              </div>
+              <p class="text-white text-sm">Spanish</p>
             </li>
           </ul>
         </div>
@@ -254,7 +227,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-4 inline-block"
+                class="size-6 inline-block"
               >
                 <path
                   stroke-linecap="round"
@@ -263,7 +236,7 @@
                 />
               </svg>
             </span>
-            antonio@silva ~ % cat /skills
+            ~ % cat /skills
           </h1>
           <ul>
             <li class="text-white text-sm">Business Central</li>
@@ -285,7 +258,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-4 inline-block"
+                class="size-6 inline-block"
               >
                 <path
                   stroke-linecap="round"
@@ -294,7 +267,7 @@
                 />
               </svg>
             </span>
-            antonio@silva ~ % cat /education
+            ~ % cat /education
           </h1>
           <ul>
             <li class="text-white text-sm">
@@ -311,7 +284,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-4 inline-block"
+                class="size-6 inline-block"
               >
                 <path
                   stroke-linecap="round"
@@ -320,7 +293,7 @@
                 />
               </svg>
             </span>
-            antonio@silva ~ % cat /courses
+            ~ % cat /courses
           </h1>
           <ul>
             <li class="text-white text-sm">
@@ -363,11 +336,11 @@
           <ul>
             <li class="text-white text-sm">
               <h2 class="font-bold text-emerald-600 text-lg">
-                antonio@silva ~ % cd "LS Retail, an Aptos Company"
+                ~ % cd "LS Retail, an Aptos Company"
               </h2>
               <ol>
                 <h3 class="font-bold text-emerald-600 text-base">
-                  antonio@silva ~ % ls "Senior Software Engineer"
+                  ~ % ls "Senior Software Engineer"
                 </h3>
                 <div class="font-bold">Nov 2022 - Present</div>
                 <br />
@@ -382,7 +355,7 @@
                   <li class="text-white text-sm">Scrum</li>
                 </ul>
                 <h3 class="font-bold text-emerald-600 text-base">
-                  antonio@silva ~ % ls Software Engineer
+                  ~ % ls "Software Engineer"
                 </h3>
                 <div class="font-bold">Apr 2020 - Nov 2022</div>
                 <br />
@@ -410,11 +383,11 @@
             </li>
             <li class="text-white text-sm">
               <h2 class="font-bold text-emerald-600 text-lg">
-                antonio@silva ~ % cd myPartner
+                ~ % cd myPartner
               </h2>
               <ul>
                 <h3 class="font-bold text-emerald-600 text-base">
-                  antonio@silva ~ % ls "Lead Engineer"
+                  ~ % ls "Lead Engineer"
                 </h3>
                 <div class="font-bold">May 2019 - May 2020</div>
                 <br />
@@ -433,7 +406,7 @@
                   </li>
                 </ul>
                 <h3 class="font-bold text-emerald-600 text-base">
-                  antonio@silva ~ % ls "Senior Software Engineer"
+                  ~ % ls "Senior Software Engineer"
                 </h3>
                 <p>Oct 2018 - Mar 2019</p>
                 <br />
@@ -454,7 +427,7 @@
                   </li>
                 </ul>
                 <h3 class="font-bold text-emerald-600 text-base">
-                  antonio@silva ~ % ls "Support Software Engineer"
+                  ~ % ls "Support Software Engineer"
                 </h3>
                 <div class="font-bold">Jan 2017 - Oct 2018</div>
                 <br />
@@ -475,7 +448,7 @@
                   </li>
                 </ul>
                 <h3 class="font-bold text-emerald-600 text-base">
-                  antonio@silva ~ % ls "Software Engineer (Trainee)"
+                  ~ % ls "Software Engineer (Trainee)"
                 </h3>
                 <div class="font-bold">Nov 2021 - Nov 2022</div>
                 <br />
