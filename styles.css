@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.flip-box {
-  @apply rounded-full;
+/* .flip-box {
   @apply bg-transparent;
-  width: 200px;
-  height: 200px;
   perspective: 1000px;
 }
 
@@ -34,4 +31,4 @@
 
 .flip-box-back {
   transform: rotateY(180deg);
-}
+} */
