@@ -32,3 +32,9 @@
 .flip-box-back {
   transform: rotateY(180deg);
 } */
+
+h1,
+h2,
+h3 {
+  @apply leading-relaxed;
+}
