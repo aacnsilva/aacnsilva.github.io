@@ -37,40 +37,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Form submission handling
-  const contactForm = document.querySelector('.contact-form');
+  // // Form submission handling
+  // const contactForm = document.querySelector('.contact-form');
   
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
+  // if (contactForm) {
+  //   contactForm.addEventListener('submit', function(e) {
+  //     e.preventDefault();
       
-      // Get form data
-      const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
-      };
+  //     // Get form data
+  //     const formData = {
+  //       name: document.getElementById('name').value,
+  //       email: document.getElementById('email').value,
+  //       subject: document.getElementById('subject').value,
+  //       message: document.getElementById('message').value
+  //     };
       
-      // Here you would typically send the data to a server
-      console.log('Form submitted:', formData);
+  //     // Here you would typically send the data to a server
+  //     console.log('Form submitted:', formData);
       
-      // Show success message (in a real implementation, this would happen after successful submission)
-      const successMessage = document.createElement('div');
-      successMessage.className = 'success-message';
-      successMessage.textContent = 'Message sent successfully!';
+  //     // Show success message (in a real implementation, this would happen after successful submission)
+  //     const successMessage = document.createElement('div');
+  //     successMessage.className = 'success-message';
+  //     successMessage.textContent = 'Message sent successfully!';
       
-      contactForm.appendChild(successMessage);
+  //     contactForm.appendChild(successMessage);
       
-      // Reset form
-      contactForm.reset();
+  //     // Reset form
+  //     contactForm.reset();
       
-      // Remove success message after 3 seconds
-      setTimeout(() => {
-        successMessage.remove();
-      }, 3000);
-    });
-  }
+  //     // Remove success message after 3 seconds
+  //     setTimeout(() => {
+  //       successMessage.remove();
+  //     }, 3000);
+  //   });
+  // }
   
   // Active navigation highlighting based on scroll position
   function highlightActiveNavLink() {
