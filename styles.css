@@ -724,11 +724,13 @@ a:hover {
 .contact-container {
   max-width: 48rem;
   margin: 0 auto;
+  width: 100%;
 }
 
 .contact-form {
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-xxl);
+  width: 100%;
 }
 
 .form-grid {
@@ -736,10 +738,12 @@ a:hover {
   grid-template-columns: 1fr;
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
+  width: 100%;
 }
 
 .form-group {
   margin-bottom: var(--spacing-lg);
+  width: 100%;
 }
 
 .form-group label {
@@ -755,8 +759,10 @@ a:hover {
   border: 1px solid var(--color-terminal-header);
   border-radius: 0.25rem;
   padding: var(--spacing-sm) var(--spacing-md);
-  color: white;
+  color: var(--color-terminal-text);
   font-family: var(--font-family);
+  box-sizing: border-box;
+  margin-top: var(--spacing-xs);
 }
 
 .form-group input:focus,
@@ -888,6 +894,7 @@ a:hover {
   
   .form-grid {
     grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
   }
   
   .contact-info {
@@ -964,4 +971,56 @@ a:hover {
 
 .slide-up {
   animation: slideUp 0.5s ease-in-out;
+}
+
+/* Contact form fixes */
+.form-group {
+  margin-bottom: var(--spacing-lg);
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background-color: var(--color-terminal-bg);
+  border: 1px solid var(--color-terminal-header);
+  border-radius: 0.25rem;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-terminal-text);
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  margin-top: var(--spacing-xs);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  width: 100%;
+}
+
+.contact-form {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxl);
+  width: 100%;
+}
+
+/* Ensure the container has proper width */
+.contact-container {
+  max-width: 48rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Add some padding to the terminal body for the form */
+.contact-section .terminal-body {
+  padding: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+  }
 } 
